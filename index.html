@@ -330,7 +330,7 @@
     <div class="section "><h1>这是第一屏</h1></div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script src="js/fullPage.js-master/jquery.fullPage.js"></script>
+<script src="js/jquery.fullPage.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script>
     $(document).ready(function () {
@@ -350,9 +350,7 @@
                         right: '0',
                     }, 900, 'easeOutExpo');
                 }
-                /* if(index==2){
-                    $(".skill .title").delay(9000).addClass("title_active");
-                }*/
+          
                 }
             })
     });
@@ -374,24 +372,5 @@
     var MyMar=setInterval(Marquee,speed);
     tab.onmouseover=function() {clearInterval(MyMar)};
     tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
-/*    var area=document.getElementsByClassName("more_genius")[0];
-
-    console.log(area.offsetWidth);
-    console.log(area.scrollTop);
-    function scroll() {
-        if(area.scrollLeft-area.offsetWidth>=0){
-            area.scrollLeft-=area.offsetWidth;
-        }else {
-            area.scrollLeft=area.scrollLeft+1;
-            console.log(area.scrollLeft);
-        }
-    }
-    var myScroll=setInterval(scroll(),30);
-    area.onmouseover=function(){
-        clearInterval(myScroll);
-    }
-    area.onmouseout=function(){
-        myScroll=setInterval('scroll',30);
-    }*/
 </script>
 </body>
